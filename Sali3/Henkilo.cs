@@ -68,6 +68,19 @@ namespace Sali3
             this.jasenid = id;
             this.sukupuoli = sukupuoli;
         }
-        
+
+
+        // Metodeja testaukseen
+        public void naytaJasen()
+        {
+            Console.WriteLine("Etunimi on " + this.etunimi);
+            Console.WriteLine("Sukunimi on " + this.sukunimi);
+            Console.WriteLine("Katuosoite on " + this.katuosoite);
+            Console.WriteLine("Postinumero on " + this.postinumero);
+            Console.WriteLine("Postitoimipaikka on " + this.postitoimipaikka);
+            Console.WriteLine("Jäsen ID on " + this.jasenid);
+            Console.WriteLine("Sukupuoli on " + this.sukupuoli);
+        }
+
     }
 }
