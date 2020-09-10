@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace Sali3
 {
@@ -10,7 +11,19 @@ namespace Sali3
 
             // Testataan oletusmuodostin
 
-            Henkilo henkilo = new Henkilo()
+            Henkilo henkilo = new Henkilo();
+
+            //testataan muodostin kaikilla parametreillä
+
+            Henkilo henkilo1 = new Henkilo("Niko", "Lindroos", "Kaerlantie 8", "21320", "Turku");
+
+
+            //katsotaan olion ominaisuuksia
+            Console.WriteLine("Testi oletusmuodostimelle");
+            henkilo.naytaHenkilo();
+
+            Console.WriteLine("Testi muodostimelle kaikilla parametreillä");
+            henkilo1.naytaHenkilo();
         }
     }
 }
